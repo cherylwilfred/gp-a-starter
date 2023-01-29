@@ -27,7 +27,7 @@ while marbles != 0:
         if can_take == 0:
             can_take = 1
         take = 0
-        while (take < 1 or take > can_take) and take != 1:
+        while (take > 1 or take < can_take) and take != 1:
             take = int(input("How many marbles to you want to take (1-" + str(can_take) + "): "))
         marbles += take
     else:
